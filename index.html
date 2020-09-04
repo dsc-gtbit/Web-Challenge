@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,900&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Work</title>
+
+</head>
+<body>
+    <div class="fsbanner" id="banner"  onclick="goUp(); " >
+        <div class="container">
+            <div class="heading">
+                <p>ADWAITS</p>
+            </div>
+            <div class="content">
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut incidunt perspiciatis
+                </p>
+            </div>
+            <div class="fsfooter">
+                <p><span>Client: </span> ABC Pvt. Ltd.</p>
+                <p><span>Project Focus  : </span> UX Design, Visual Design and Web</p>
+            </div>
+
+        </div>
+    </div>
+    <div id="mainContent" >
+        <div id="image1">
+            <img  src="images/laptop.png"alt="">
+        </div>  
+        <div id="image2" onclick="onSlide();">
+            <img src="images/kleeto.png" alt="">
+        </div>
+
+    </div>
+
+    <script>
+        var banner = document.getElementById("banner");
+        var image = document.getElementById("image2");
+        function goUp(){
+            banner.style.transform="translatey(-100%)";
+        }
+        function onSlide(){
+           image.style.width="355px"; 
+           image.style.height="204px"; 
+        }
+    </script>
+</body>
+</html>
