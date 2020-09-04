@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSC Web Team Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function animate1() {
+            var firstPage = document.getElementById('firstPage');
+            firstPage.style.transition="0.5s all ease";
+            firstPage.style.transform="translateX(-100%)";
+        }
+
+        function squeeze() {
+            var firstPage = document.getElementById('image1');
+            firstPage.style.transition="1s all ease";
+            firstPage.style.width="355px";
+            firstPage.style.height="204px";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="firstPage" id="firstPage" onclick="animate1();">
+            <div id="logo" class="styling">
+                <h3>DSC GTBIT</h3>
+            </div>
+            <div id="tag-line" class="styling">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Add Your Text Here</h2>
+            </div>
+            <div id="credits" class="styling">
+                <div><span>Client:</span> DSC</div>
+                <div><span>Project:</span>Web Challage</div>
+            </div>
+        </div>
+        <div class="secondPage" id="secondPage">
+                <div id="laptop">
+                    <img src="./laptop1.png" alt="laptop">
+                </div>
+                <div id="image1" onclick="squeeze();">
+                    <img src="./kleeto.png" alt="kleeto">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
