@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.fsbanner{
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    transition: all .75s ;
+    background:#E98853;  
+    height: 98%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    background:#E98853;
+    padding: 50px;
+    height: 98%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.heading p{
+    font-size: 30px;
+    font-weight: 600;
+    font-family:Raleway,"san-serif";
+}
+.content p{
+    font-weight: bold;
+    font-size: 45px;
+    word-wrap:break-word;
+    word-break: keep-all;
+    font-family:Raleway,"san-serif";
+
+}
+.fsfooter{
+    display: flex;
+    justify-content: space-between;
+
+}
+.fsfooter p span{
+    font-weight: 700;
+    font-family:Raleway,"san-serif";
+
+}
+.fsfooter p{
+    display: inline-block;
+    font-family:Raleway,"san-serif";
+
+}
+
+#image1{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    transition:all .75s;
+}
+#image2 img{
+    width: 100%;
+    height: 100%;
+}
+#mainContent{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#image1{
+    width: 854;
+    height: 474;
+}
